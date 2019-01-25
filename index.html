@@ -3,53 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css"/>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-          integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css"
-          integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"
-            integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw"
-            crossorigin="anonymous"></script>
+    </script>
 </head>
 <body>
-<div class="navbar navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#" title="Der kleine Laden">Der kleine Laden</a>
-        </div>
+<div id="body">
+    <div class="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" title="Der kleine Laden">Der kleine Laden</a>
+            </div>
 
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li id="menu-item-home" class="menu-item"><a href=#><span class="glyphicon glyphicon-home"></span> Home</a>
-                </li>
-                <li id="menu-item-product" class="menu-item"><a href=#> Produkte</a>
-                </li>
-                <li id="menu-item-service" class="menu-item"><a href=#> Service</a>
-                </li>
-                <li id="menu-item-contact" class="menu-item"><a href=#> Kontakt</a>
-                </li>
-            </ul>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li id="menu-item-home" class="menu-item"><a href=#><span class="glyphicon glyphicon-home"></span>
+                        Home</a>
+                    </li>
+                    <li id="menu-item-product" class="menu-item"><a href=#> Produkte</a>
+                    </li>
+                    <li id="menu-item-service" class="menu-item"><a href=#> Service</a>
+                    </li>
+                    <li id="menu-item-contact" class="menu-item"><a href=#> Kontakt</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-<div class="container content">
-    <span>Filter: </span>
-    <label for="meat" class="btn btn-danger"><input class="badgebox" type="checkbox" id="meat"><span>Fleisch</span></label>
-    <label for="vegi" class="btn btn-success"><input class="badgebox" type="checkbox" id="vegi"><span>Gemüse</span></label>
-    <label for="fruit" class="btn btn-warning"><input class="badgebox" type="checkbox" id="fruit"><span>Obst</span></label>
-
+    <div class="container main">
+        <div class="filter">
+            <div class="row">
+                <div class="col-md-3">
+                    <span>Filter: </span>
+                </div>
+                <div class="col-md-3">
+                    <label class="btn btn-danger"><input class="badgebox" type="checkbox" id="checkboxmeat" checked><span>Fleisch</span></label>
+                </div>
+                <div class="col-md-3">
+                    <label class="btn btn-success"><input class="badgebox" type="checkbox" id="checkboxvegi" checked><span>Gemüse</span></label>
+                </div>
+                <div class=col-md-3">
+                    <label class="btn btn-warning"><input class="badgebox" type="checkbox" id="checkboxfruit" checked><span>Obst</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-3 fruit" id="apfel">
+                </div>
+                <div class="col-md-3 vegi" id="aubergine"></div>
+                <div class="col-md-3 fruit" id="banana"></div>
+                <div class="col-md-3 vegi" id="brokkoli"></div>
+                <div class="col-md-3 meat" id="huhn"></div>
+                <div class="col-md-3 fruit" id="orange"></div>
+                <div class="col-md-3 meat" id="rind"></div>
+                <div class="col-md-3 vegi" id="zucchini"></div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
