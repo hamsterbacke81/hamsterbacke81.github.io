@@ -30,28 +30,13 @@
 #body #main .filter label span {
   padding-left: 4px;
 }
-#body #main .content .row .product-col {
-  height: 200px;
-  background-color: white;
-  /* Large devices (large desktops, 1200px and up) */
-  /* Medium devices (desktops, 992px and up) */
-  /* Small devices (tablets, 768px and up) */
+#body #main .content .row .vegi {
+  background-color: green;
 }
-@media (max-width: 1260px) {
-  #body #main .content .row .product-col {
-    background-color: green;
-    width: 25%;
-    float: left;
-  }
+#body #main .content .row .fruit {
+  background-color: orange;
 }
-@media (max-width: 700px) {
-  #body #main .content .row .product-col {
-    background-color: yellow;
-  }
-}
-@media (max-width: 500px) {
-  #body #main .content .row .product-col {
-    background-color: red;
-  }
+#body #main .content .row .meat {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */
