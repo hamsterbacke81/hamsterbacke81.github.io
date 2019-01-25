@@ -1,15 +1,44 @@
-.navbar #navbar {
+#body {
+  max-width: 1260px;
+  margin: auto;
+  background-color: #eeeeee;
+}
+#body .navbar #navbar {
   float: right;
 }
-.content {
+#body .main {
   margin-top: 100px;
 }
-.content label {
+#body .main .filter {
+  padding: 0 0 20px 0;
+}
+#body .main .filter label {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-.content label span {
+#body .main .filter label span {
   padding-left: 4px;
+}
+#body .main .content .row div.col-md-3 {
+  max-height: 600px;
+  margin-bottom: 10px;
+}
+#body .main .content .row div.col-md-3 .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+#body .main .content .row div.col-md-3 .productinfo {
+  padding: 8px 0;
+  background-color: white;
+}
+#body .main .content .row div.col-md-3 .productinfo .name {
+  font-size: 20px;
+}
+#body .main .content .row div.col-md-3 .productinfo .description {
+  padding: 4px;
+}
+#body .main .content .row div.col-md-3 .productinfo .link {
+  padding: 4px;
 }
 /*# sourceMappingURL=style.css.map */
