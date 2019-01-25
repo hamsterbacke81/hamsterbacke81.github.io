@@ -10,28 +10,27 @@
 #body .navbar .navbar-brand {
   padding: 0;
 }
-#body .navbar .navbar-brand img {
-  height: 100%;
-  width: auto;
-}
 #body .navbar .navbar-nav {
   float: right;
 }
-#body .main {
-  margin-top: 100px;
+#body #main {
+  margin-top: 70px;
 }
-#body .main .filter {
+#body #main .filter {
   padding: 0 0 20px 0;
 }
-#body .main .filter label {
+#body #main .filter .row div {
+  padding: 2px;
+}
+#body #main .filter label {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-#body .main .filter label span {
+#body #main .filter label span {
   padding-left: 4px;
 }
-#body .main .content .row .product-col {
+#body #main .content .row .product-col {
   height: 200px;
   background-color: white;
   /* Large devices (large desktops, 1200px and up) */
@@ -39,19 +38,19 @@
   /* Small devices (tablets, 768px and up) */
 }
 @media (max-width: 1260px) {
-  #body .main .content .row .product-col {
+  #body #main .content .row .product-col {
     background-color: green;
     width: 25%;
     float: left;
   }
 }
 @media (max-width: 700px) {
-  #body .main .content .row .product-col {
+  #body #main .content .row .product-col {
     background-color: yellow;
   }
 }
 @media (max-width: 500px) {
-  #body .main .content .row .product-col {
+  #body #main .content .row .product-col {
     background-color: red;
   }
 }

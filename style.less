@@ -8,97 +8,17 @@
 }
 
 #body {
-
   max-width: 1260px;
   margin: 0 auto;
   padding: 0;
   background-color: #e7e7e7;
 
-  .navbar {
-    .navbar-brand {
-      padding: 0;
+  @import "navbar.less";
 
-      img {
-        height: 100%;
-        width: auto;
-      }
-    }
+  #main {
+    margin-top: 70px;
 
-    .navbar-nav {
-      float: right;
-    }
-  }
-
-  .main {
-    margin-top: 100px;
-
-    .filter {
-      padding: 0 0 20px 0;
-
-      label {
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        border-radius: 30px;
-
-        span {
-          padding-left: 4px;
-        }
-      }
-    }
-
-    .content {
-      .row {
-        img {
-          //max-width: 100%;
-        }
-
-        .product-col {
-          height: 200px;
-          background-color: white;
-
-          /* Large devices (large desktops, 1200px and up) */
-          @media (max-width: 1260px) {
-            background-color: green;
-            width: 25%;
-            float: left;
-          }
-          /* Medium devices (desktops, 992px and up) */
-          @media (max-width: 700px) {
-            background-color: yellow;
-          }
-          /* Small devices (tablets, 768px and up) */
-          @media (max-width: 500px) {
-            background-color: red;
-          }
-        }
-
-        //div.col-md-3 {
-        //  max-height: 600px;
-        //  margin-bottom: 10px;
-        //
-        //  .row {
-        //    margin-left: -10px;
-        //    margin-right: -10px;
-        //  }
-        //
-        //  .productinfo {
-        //    padding: 8px 0;
-        //    background-color: white;
-        //
-        //    .name {
-        //      font-size: 20px;
-        //    }
-        //
-        //    .description {
-        //      padding: 4px;
-        //    }
-        //
-        //    .link {
-        //      padding: 4px;
-        //    }
-        //  }
-        //}
-      }
-    }
+    @import "filter.less";
+    @import "content.less";
   }
 }
