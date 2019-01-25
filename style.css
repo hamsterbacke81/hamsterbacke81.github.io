@@ -1,9 +1,20 @@
+.container {
+  width: 100%;
+}
 #body {
   max-width: 1260px;
-  margin: auto;
-  background-color: #eeeeee;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #e7e7e7;
 }
-#body .navbar #navbar {
+#body .navbar .navbar-brand {
+  padding: 0;
+}
+#body .navbar .navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+#body .navbar .navbar-nav {
   float: right;
 }
 #body .main {
@@ -20,25 +31,28 @@
 #body .main .filter label span {
   padding-left: 4px;
 }
-#body .main .content .row div.col-md-3 {
-  max-height: 600px;
-  margin-bottom: 10px;
-}
-#body .main .content .row div.col-md-3 .row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-#body .main .content .row div.col-md-3 .productinfo {
-  padding: 8px 0;
+#body .main .content .row .product-col {
+  height: 200px;
   background-color: white;
+  /* Large devices (large desktops, 1200px and up) */
+  /* Medium devices (desktops, 992px and up) */
+  /* Small devices (tablets, 768px and up) */
 }
-#body .main .content .row div.col-md-3 .productinfo .name {
-  font-size: 20px;
+@media (max-width: 1260px) {
+  #body .main .content .row .product-col {
+    background-color: green;
+    width: 25%;
+    float: left;
+  }
 }
-#body .main .content .row div.col-md-3 .productinfo .description {
-  padding: 4px;
+@media (max-width: 700px) {
+  #body .main .content .row .product-col {
+    background-color: yellow;
+  }
 }
-#body .main .content .row div.col-md-3 .productinfo .link {
-  padding: 4px;
+@media (max-width: 500px) {
+  #body .main .content .row .product-col {
+    background-color: red;
+  }
 }
 /*# sourceMappingURL=style.css.map */
