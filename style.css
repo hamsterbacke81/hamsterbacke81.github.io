@@ -30,13 +30,54 @@
 #body #main .filter label span {
   padding-left: 4px;
 }
-#body #main .content .row .vegi {
-  background-color: green;
+#body #main .content .row .product {
+  padding-bottom: 16px;
 }
-#body #main .content .row .fruit {
-  background-color: orange;
+#body #main .content .row .productinfo {
+  background-color: white;
 }
-#body #main .content .row .meat {
-  background-color: red;
+#body #main .content .row .productinfo .producttitle {
+  padding: 8px 0;
+  position: relative;
+}
+#body #main .content .row .productinfo .producttitle .name {
+  font-size: 2em;
+}
+#body #main .content .row .productinfo .producttitle .tag {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#body #main .content .row .productinfo .productdescription {
+  padding: 0 8px;
+}
+#body #main .content .row .productinfo .productlink {
+  padding: 20px 8px;
+}
+#body #main .content .row .productinfo .productlink i {
+  color: #000;
+}
+#body #main .content .row .vegi .badge {
+  background-color: #419641;
+}
+#body #main .content .row .vegi .productlink i {
+  color: #419641;
+}
+#body #main .content .row .fruit .badge {
+  background-color: #eb9316;
+}
+#body #main .content .row .fruit .productlink i {
+  color: #eb9316;
+}
+#body #main .content .row .meat .badge {
+  background-color: #c12e2a;
+}
+#body #main .content .row .meat .productlink i {
+  color: #c12e2a;
 }
 /*# sourceMappingURL=style.css.map */
